@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Insert</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <label>Name: </label>
+    <input name="name" value="{{person.name}}">
+    <br>
+    <label>Phone: </label>
+    <input name="phone" value="{{person.phone}}">
+    <br>
+    <label>Age: </label>
+    <input name="age" value="{{person.age}}">
+    <br>
+    <input type="hidden" name="id" value="{{person.id}}">
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

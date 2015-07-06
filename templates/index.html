@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Details</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'CSS/index.css' %}" />
+
+</head>
+<div style="position: relative; left: 0; top: 0;">
+    <h1 style="position: absolute; top:70px; left: 400px">Data Library</h1>
+        <p style="position: absolute; top:110px; left: 1230px; font-size:150%; color: black "><a href="/insert">Insert</a></p>
+</div>
+    <div>
+        {% if people %}
+            <table>
+                <fieldset>
+                    <legend>Details</legend>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Age</th>
+                            <th>Actions</th>
+                        </tr>
+                    {% for person in people %}
+                        <tr>
+                            <td>{{person.name}}</td>
+                            <td>{{person.phone}}</td>
+                            <td>{{person.age}}</td>
+                            <td><a href="/delete/{{person.id}}">Delete</a></td>
+                            <td><a href="/edit/{{person.id}}">Edit</a></td>
+                        </tr>
+                </fieldset>
+                    {% endfor %}
+            </table>
+        {% else %}
+            <p>No people in the database</p>
+        {% endif %}
+    </div>
+
+<body>
+
+</body>
+</html>
