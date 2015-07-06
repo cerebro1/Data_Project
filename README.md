@@ -1,4 +1,4 @@
-Data of a person:CRUD implementation in django
+Data of a person:CRUD implementation in django"\n"
 	Steps to run the code:
 	1.git clone https://github.com/cerebro1/Data_Project.git
 	2.cd Data_Project              #change directory to the DataProject directory
