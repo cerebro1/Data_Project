@@ -25,7 +25,8 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
+TEMPLATE_DIRS = (BASE_DIR +"/templates",)
+print TEMPLATE_DIRS
 
 # Application definition
 
