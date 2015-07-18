@@ -1,3 +1,3 @@
 export DATABASE_NAME=databasename
-export USERNAME=username
-export PASSWORD=password
+export USER_NAME=username
+export PASS=password
