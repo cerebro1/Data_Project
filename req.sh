@@ -11,4 +11,4 @@ sudo apt-get install python-mysqldb
 #Note, use the password you entered when installing MySql
 echo "CREATE DATABASE @DATABASE_NAME;"|mysql -u root --password=@PASSWORD
 echo "GRANT ALL ON @DATABASE_NAME.* TO '@USERNAME'@'localhost' IDENTIFIED BY '@PASSWORD';"|mysql -u root --password=@PASSWORD
-echo "EXIT"|
+echo "EXIT"|mysql -u root --password=@PASSWORD
