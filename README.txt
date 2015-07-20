@@ -6,6 +6,6 @@ Data of a person:CRUD implementation in django
 	4.Run $source admin.sh
 	5.$chmod 777 req.sh
 	6.$./req.sh
-	5.$python manage.py syncdb
+	5.$python manage.py syncdb #set username and password for superuser
 	6.$python manage.py runserver localhost:8080
 	7.Open any web browser and run localhost:8080
