@@ -18,10 +18,10 @@ mysql -u root -p
 
 #Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
 
-mysql> CREATE DATABASE person;
+mysql> CREATE DATABASE DATABASE_NAME;
 Query OK, 1 row affected (0.01 sec)
 
-mysql> GRANT ALL ON person.* TO 'djangouser'@'localhost' IDENTIFIED BY 'mypassword';
+mysql> GRANT ALL ON @DATABASE_NAME.* TO '@USERNAME'@'@localhost' IDENTIFIED BY '@PASSWORD';
 Query OK, 0 rows affected (0.03 sec)
 
 mysql> quit
